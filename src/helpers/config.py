@@ -38,6 +38,9 @@ class Settings(BaseSettings):
     VECTOR_DB_PATH : str
     VECTOR_DB_DISTANCE_METHOD: str = None
 
+    PRIMARY_LANG: str = "en"
+    DEFAULT_LANG: str = "en"
+
 
     @field_validator("FILE_ALLOWED_TYPES", mode="before")
     @classmethod
